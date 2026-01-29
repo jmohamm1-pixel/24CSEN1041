@@ -1,0 +1,16 @@
+# Bitwise Operators
+print("Bitwise Operators")
+print(f"{a} & {b} = {a & b}")
+print(f"{a} | {b} = {a | b}")
+print(f"Bitwise XOR {a} ^ {b} = {a ^ b}")
+print(f"Left Shift {a} << 2 = {a << 2}")
+print(f"Right Shift {a} >> 2 = {a >> 2}")
+output:
+Bitwise Operators
+9 & 5 = 1
+9 | 5 = 13
+Bitwise XOR 9 ^ 5 = 12
+Left Shift 9 << 2 = 36
+Right Shift 9 >> 2 = 2
+
+a is greater than b

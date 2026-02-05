@@ -1,0 +1,43 @@
+5. Remove Duplicate Characters from a String
+text = "programming"
+result = ""
+
+for char in text:
+    if char not in result:
+        result += char
+
+print("After removing duplicates:", result)
+
+
+Output
+
+After removing duplicates: progamin
+
+
+6. Count Uppercase, Lowercase, Digits, and Special Characters
+text = "Hello123@World!"
+
+upper = lower = digit = special = 0
+
+for ch in text:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
+    elif ch.isdigit():
+        digit += 1
+    else:
+        special += 1
+
+print("Uppercase:", upper)
+print("Lowercase:", lower)
+print("Digits:", digit)
+print("Special Characters:", special)
+
+
+Output
+
+Uppercase: 2
+Lowercase: 8
+Digits: 3
+Special Characters: 2

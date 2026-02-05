@@ -1,0 +1,32 @@
+3. Reverse Each Word in a Sentence
+sentence = "Python is fun"
+words = sentence.split()
+
+reversed_words = []
+for word in words:
+    reversed_words.append(word[::-1])
+
+result = " ".join(reversed_words)
+print(result)
+
+
+Output
+
+nohtyP si nuf
+
+4. Find Longest Word in a String
+sentence = "Learning python programming is interesting"
+words = sentence.split()
+
+longest_word = words[0]
+
+for word in words:
+    if len(word) > len(longest_word):
+        longest_word = word
+
+print("Longest word:", longest_word)
+
+
+Output
+
+Longest word: programming

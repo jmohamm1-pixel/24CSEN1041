@@ -1,0 +1,34 @@
+1. String Palindrome Checker
+text = "madam"
+reversed_text = text[::-1]
+
+if text == reversed_text:
+    print("Palindrome string")
+else:
+    print("Not a palindrome")
+Output
+
+Palindrome string
+
+2. Count Vowels and Consonants in a String
+sentence = "Hello World"
+vowels = "aeiouAEIOU"
+
+vowel_count = 0
+consonant_count = 0
+
+for char in sentence:
+    if char.isalpha():
+        if char in vowels:
+            vowel_count += 1
+        else:
+            consonant_count += 1
+
+print("Vowels:", vowel_count)
+print("Consonants:", consonant_count)
+
+
+Output
+
+Vowels: 3
+Consonants: 7

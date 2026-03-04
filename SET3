@@ -1,0 +1,24 @@
+SET - 3
+SECTION -  B
+Cake Bill Program
+
+cakes = ["Chocolate", "Vanilla", "Strawberry", "Red Velvet", "Black Forest"]
+prices = [100, 80, 90, 120, 110]  # prices per cake
+total = 0
+for i in range(len(cakes)):
+    qty = int(input(f"Quantity of {cakes[i]} cakes: "))
+    total += qty * prices[i]
+print(f"Original total: ₹{total}")
+discount = 0
+if total > 500:
+    discount = total * 0.10
+final = total - discount
+print(f"Discount amount: ₹{discount}")
+print(f"Final amount: ₹{final}")
+
+Leap Year
+year = int(input("Enter year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("leap year")
+else:
+    print("not a leap year")

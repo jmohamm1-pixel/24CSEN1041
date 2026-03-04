@@ -17,28 +17,44 @@ print("Gross Salary:", int(gross))
 print("Tax:", int(tax))
 print("Net Salary:", int(net))
 
+output
+1. Gross Salary: 1200
+Tax: 0
+Net Salary: 1200
+2.  Gross Salary: 6700
+Tax: 335
+Net Salary: 6365
+
 2) Average Marks and Grade
 
-m1, m2, m3 = map(int, input("Enter three marks: ").split())
+ m1, m2, m3 = map(int, input("Enter three marks: ").split())
 average = (m1 + m2 + m3) / 3
-if 90 <= average <= 100:
-    grade = "O"
-elif 80 <= average < 90:
-    grade = "A+"
-elif 70 <= average < 80:
-    grade = "A"
-elif 60 <= average < 70:
-    grade = "B+"
-elif 50 <= average < 60:
-    grade = "B"
-elif 45 <= average < 50:
-    grade = "C"
-elif 40 <= average < 45:
-    grade = "P"
-else:
-    grade = "F"
+
+match round(average):
+    case n if 90 <= n <= 100:
+        grade = "O"
+    case n if 80 <= n < 90:
+        grade = "A+"
+    case n if 70 <= n < 80:
+        grade = "A"
+    case n if 60 <= n < 70:
+        grade = "B+"
+    case n if 50 <= n < 60:
+        grade = "B"
+    case n if 45 <= n < 50:
+        grade = "C"
+    case n if 40 <= n < 45:
+        grade = "P"
+    case _:
+        grade = "F"
+
 print("Average is:", round(average, 2))
 print("Grade is", grade)
+
+output:
+Input: 95 92 88 , Average for input: 91.67, Grade: O
+Input: 75 78 72 , Average for input: 75.00, Grade: A
+Input: 35 40 38 , Average for input: 37.67, Grade: F
 
 3) Print OH / AH / OHAH (Multiples of 3 and 5)
 
@@ -54,6 +70,8 @@ for num in range(x, y + 4)
         print("AH", end=" ")
     else:
         print(num, end=" ")
+Input: x=10, y=15    OUTPUT:10 OH AH 13 14 OHAH 18 
+Input: x=10, y=15     OUTPUT:1 2 OH 4 AH 7 8 OH
 
 4) Cut String into Two Equal Parts and Interchange (Without if statement)
 
@@ -63,6 +81,12 @@ first = s[:mid]
 second = s[mid:]
 result = second + first
 print(result)
+
+Input: Python
+mid = (6+1)//2 = 3
+first = Pyt, second = hon
+Output: honPyt
+​
 
 
 

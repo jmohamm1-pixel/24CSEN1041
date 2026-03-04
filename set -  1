@@ -1,0 +1,78 @@
+SET - 1
+section B
+
+1) Overtime Salary Calculation
+
+hours = int(input("Enter total hours worked: "))
+if hours <= 8:
+    gross = hours * 200
+else:
+    gross = (8 * 200) + ((hours - 8) * 300)
+if gross > 5000:
+    tax = gross * 0.05
+else:
+    tax = 0
+net = gross - tax
+print("Gross Salary:", int(gross))
+print("Tax:", int(tax))
+print("Net Salary:", int(net))
+
+2) Average Marks and Grade
+
+m1, m2, m3 = map(int, input("Enter three marks: ").split())
+average = (m1 + m2 + m3) / 3
+if 90 <= average <= 100:
+    grade = "O"
+elif 80 <= average < 90:
+    grade = "A+"
+elif 70 <= average < 80:
+    grade = "A"
+elif 60 <= average < 70:
+    grade = "B+"
+elif 50 <= average < 60:
+    grade = "B"
+elif 45 <= average < 50:
+    grade = "C"
+elif 40 <= average < 45:
+    grade = "P"
+else:
+    grade = "F"
+print("Average is:", round(average, 2))
+print("Grade is", grade)
+
+3) Print OH / AH / OHAH (Multiples of 3 and 5)
+
+x = int(input("Enter starting number: "))
+y = int(input("Enter ending number: "))
+
+for num in range(x, y + 4) 
+    if num % 3 == 0 and num % 5 == 0:
+        print("OHAH", end=" ")
+    elif num % 3 == 0:
+        print("OH", end=" ")
+    elif num % 5 == 0:
+        print("AH", end=" ")
+    else:
+        print(num, end=" ")
+
+4) Cut String into Two Equal Parts and Interchange (Without if statement)
+
+s = input("Enter a string: ")
+mid = (len(s) + 1) // 2  
+first = s[:mid]
+second = s[mid:]
+result = second + first
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+

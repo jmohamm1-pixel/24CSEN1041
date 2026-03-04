@@ -1,0 +1,66 @@
+SET - 2
+SECTION - B
+1) Cookie Exchange (Swap Values)
+
+m, n = map(int, input().split())
+print("Cookies at the beginning:", m, n)
+m, n = n, m
+
+print("Cookies after 1st interchange:", m, n)
+
+2) Check Right-Angled Triangle (Pythagoras Theorem)
+
+a, b, c = map(int, input().split())
+sides = sorted([a, b, c])
+if sides[0]**2 + sides[1]**2 == sides[2]**2:
+    print("Yes")
+else:
+    print("No")
+
+3) Print First n Fibonacci Numbers
+
+n = int(input())
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+4) First Unique Character in String
+
+s = input()
+for ch in s:
+    if s.count(ch) == 1:
+        print(ch)
+        break
+else:
+    print(-1)
+
+5) Check Whether Two Lists Are Equal
+
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+if list1 == list2:
+    print("Lists are equal")
+else:
+    print("Lists are not equal")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
